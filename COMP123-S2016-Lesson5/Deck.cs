@@ -63,7 +63,7 @@ namespace COMP123_S2016_Lesson5
                 }
                 for (int face = 1; face < 14; face++)
                 {
-                    this.Add(new Card(face, suit));
+                    this.Add(new Card(face, suit)); // anonomys Card object to the list
                 } //end for -face
             } // end for -suit
         } // end CreateDeck method
@@ -117,6 +117,29 @@ namespace COMP123_S2016_Lesson5
                 this[currentCard] = this[randomCard]; // copy value from randomCard to current card
                 this[randomCard] = tempCard; // copy current card to random card
             }
+        }
+
+         /**
+       * <summary>
+       * This method removes the 0th item from deck and return it to the caller
+       * </summary>
+       * 
+       * @method Deal
+       * @return {Card}
+       *
+       */
+        public Card Deal()
+        {
+            Card returnedCard = this[0]; // copy the 0th card in the stack to the returnedCard
+
+            // check to see if the deck is not empty
+            if (this.Count>0)
+            {
+                this.RemoveAt(0); // removes the 0th Card from deck
+            }
+            
+
+            return returnedCard;             
         }
     }  
 }
