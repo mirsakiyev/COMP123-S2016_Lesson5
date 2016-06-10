@@ -8,7 +8,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="COMP123_S2016_Lesson5.Deck">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Position X="3.75" Y="2" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAAAAAAAAAAIAAAAEAA=</HashCode>
       <FileName>Deck.cs</FileName>
