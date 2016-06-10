@@ -41,31 +41,16 @@ namespace COMP123_S2016_Lesson5
         */
         private void _create()
         {
-            string suit = "";
 
-            for (int i = 0; i < 4; i++)
+            foreach (Suits suit in Enum.GetValues(typeof(Suits)))
             {
-                switch (i)
-                {
-                    case 0:
-                        suit = "hearts";
-                        break;
-                    case 1:
-                        suit = "clubs";
-                        break;
-                    case 2:
-                        suit = "diamonds";
-                        break;
-                    case 3:
-                        suit = "spades";
-                        break;
 
-                }
-                for (int face = 1; face < 14; face++)
+                foreach (Faces face in Enum.GetValues(typeof(Faces)))
                 {
                     this.Add(new Card(face, suit)); // anonomys Card object to the list
-                } //end for -face
-            } // end for -suit
+                }
+
+            }
         } // end CreateDeck method
 
 
